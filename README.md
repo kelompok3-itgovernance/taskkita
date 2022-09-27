@@ -1,4 +1,4 @@
-## Taskkita
+# Taskkita
 
 Public repository untuk Kelompok 3 Mata Kuliah IT Governance
 
