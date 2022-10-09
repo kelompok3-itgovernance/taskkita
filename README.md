@@ -12,3 +12,6 @@ Public repository untuk Kelompok 3 Mata Kuliah IT Governance
 ### Dosen Pengampu
 
 Sigit Wijanarko, S.Kom., M.Kom
+
+
+Visit our page on [IT Gov Kel 3](https://kelompok3-itgovernance.github.io/taskkita/)
