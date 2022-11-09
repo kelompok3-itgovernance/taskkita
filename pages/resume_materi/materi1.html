@@ -20,15 +20,35 @@
 
     <!-- Main CSS -->
     <link href="../../css/style.css" rel="stylesheet" />
+
+    <style>
+      *, html{
+         scroll-behavior: smooth !important;
+       }
+
+       .video-container {
+         position: relative;
+         padding-bottom: 56.25%; /* 16:9 */
+         height: 0;
+       }
+       .video-container iframe {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+       }
+   </style>
   </head>
 
   <body class="body-piling">
     <div class="wrapper">
       <header id="header" class="header">
         <div class="container-fluid">
-          <div class="brand">
+
+          <!-- <div class="brand">
             <a href="#About" class="brand-name"><b>Materi Jurnal</b> | IT Governance <span class="brand-name-s">Kelompok 3</span></a>
-          </div>
+          </div> -->
 
           <button class="nav-toggle-btn a-nav-toggle">
             <span class="hamburger">
@@ -76,11 +96,9 @@
 
       <div id="content">
         <div class="full-page">
-          <div
-            class="section pp-scrollable slide slide-contacts a-slide-typed"
-            data-name="contacts"
-          >
-            <div class="slide-container">
+          <div class="section pp-scrollable slide slide-contacts a-slide-typed" style="display: block;" data-name="contacts" >
+            <!-- <div class="slide-container"> -->
+            <div class="">
               <div class="lines">
                 <div></div>
                 <div></div>
@@ -88,10 +106,10 @@
                 <div></div>
               </div>
               <div class="contact-ornament"></div>
-              <div
-                class="container"
-                style="height: 90vh !important; overflow: scroll"
-              >
+              <div class="container" style=" height: 90vh !important; overflow:scroll; margin-top: 30px !important;">
+
+                <a href="#About" class="brand-name"><b>Materi Jurnal</b> | IT Governance <span class="brand-name-s">Kelompok 3</span></a>
+
                 <div class="row justify-content-center">
                   <div class="col-lg-8">
 
@@ -111,6 +129,16 @@
                       <h1 class="slide-title font-custom text-center">
                         Resume Materi 1
                       </h1>
+                    </div>
+                    <div class="animate-element delay5 fadeInUp text-center">
+                      <a id="btn-video" href="#referensi-video" class="mr-3 btn btn-outline-info btn-sm text-center">Video penjelasan</a>
+                      <a href="#quiz" class="mr-3 btn btn-success btn-sm text-center">Quiz Time</a>
+                      <a href="https://kampus.antarbangsa.ac.id/new/pluginfile.php/14750/mod_folder/content/0/01__IT%20Governance%20-%20Pendahuluan.pdf" class="btn btn-warning btn-sm text-center">Download Materi</a>
+                      <br>
+                      <br>
+                      <small class="mt-5"><i>Note: Fitur diatas dapat dijumpai pada section terbawah halaman ini</i></small>
+                      <br>
+                      <br>
                     </div>
                     <br />
 
@@ -283,6 +311,21 @@
                     <br />
                     <br />
                     <br />
+
+
+                    
+                    <div id="referensi-video" class="title-mini text-primary text-center" style="color:#c59015 !important;"><strong>Referensi Video Penjelasan :</strong></div>
+                    <div class="video-container mt-2 mb-5 text-center">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/msy0opgc35o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container mt-2 mb-5 text-center">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/cLI2Q9tAWO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div id="quiz" class="title-mini text-primary text-center" style="color:#c59015 !important;"><strong>Quiz time :</strong></div>
+                    <div class="mt-2 mb-5 text-center">
+                      <iframe src="https://trinket.io/embed/python/b518a14dd6?toggleCode=true&start=result" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                    </div>
+
                   </div>
                 </div>
                 <!-- <div class="row align-items-center text-center contacts animate-element delay11 fadeInUp">
